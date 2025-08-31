@@ -1,0 +1,22 @@
+# users.txt
+# userId username password loginCount friendCount lastLoginTimestamp isActive
+
+0 Alice alice123 1 2 1706789012 1
+1 Bob bob123 3 1 1706790021 1
+2 Charlie charlie123 2 1 1706791105 1
+
+
+#connection.txt
+# userId1 userId2
+# (Represents a friendship between two users)
+
+0 1   # Alice (0) is friends with Bob (1)
+0 2   # Alice (0) is friends with Charlie (2)
+1 2   # Bob (1) is friends with Charlie (2)
+
+
+#requests.txt
+# fromId toId status
+# status -> 0: pending, 1: accepted, 2: rejected
+
+2 1 0   # Charlie (2) sent a friend request to Bob (1), status = pending
